@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- MPD file Generated with GPAC version 0.7.2-DEV-rev889-g72e62ea2-master  at 2018-10-23T13:57:34.837Z-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" minBufferTime="PT1.500S" type="static" mediaPresentationDuration="PT0H9M56.459S" maxSegmentDuration="PT0H0M7.500S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011,http://dashif.org/guidelines/dash264">
+ <ProgramInformation moreInformationURL="http://gpac.io">
+  <Title>BBB</Title>
+ </ProgramInformation>
+
+ <Period duration="PT0H9M56.459S">
+  <AdaptationSet segmentAlignment="true" lang="und" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+   <Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="48000" bandwidth="128702">
+    <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+    <BaseURL>p_audio_128k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="862-2333">
+     <Initialization range="0-861"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+  <AdaptationSet segmentAlignment="true" maxWidth="1280" maxHeight="720" maxFrameRate="24" par="16:9" lang="und" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+   <Representation id="2" mimeType="video/mp4">
+    <BaseURL>p_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="904-2039">
+     <Initialization range="0-903"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+ </Period>
+</MPD>
